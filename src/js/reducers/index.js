@@ -17,7 +17,7 @@ function rootReducer(state = initialState, action) {
     if (action.type === DATA_LOADED) {
         return {
             ...state,
-            loading: state.loading,
+            loading: state.loading = false,
             remoteArticles: state.remoteArticles.concat(action.payload)
         }
     }
